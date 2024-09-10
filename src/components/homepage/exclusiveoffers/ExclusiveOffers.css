@@ -1,0 +1,62 @@
+.exclusive_offers_container {
+  margin-top: 7%;
+  height: 50vh;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.offers {
+  height: 37vh;
+  width: 38%;
+  background-color: yellowgreen;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-radius: 10px;
+}
+.exclusive_offers {
+  padding: 55px;
+  display: flex;
+  gap: 15px;
+}
+.exclusive_offer_btn {
+  background-color: #ffe500;
+  border: none;
+  padding: 8px 10px 8px 10px;
+  height: 30px;
+  width: 83px;
+  border-radius: 4px;
+}
+.coupon_code_btn {
+  height: 42px;
+  width: 234px;
+  padding: 14px 10px 14px 10px;
+  border-radius: 10px;
+  border: none;
+  color: #0169e4;
+  font-weight: 700;
+}
+.first_offer {
+  background: linear-gradient(to right, #5da6e5, #0069e4);
+}
+.first_offer h1 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 48px;
+}
+.first_offer p {
+  color: #ffe500;
+  font-weight: 600;
+  font-size: 24px;
+}
+.exclusive_offer_coverimg {
+  height: 230px;
+  width: 240px;
+  position: relative;
+  bottom: 90%;
+  left: 55.5%;
+}
+.second_offer{
+    background: linear-gradient(to right, #76ea76,#52b874);
+    
+}

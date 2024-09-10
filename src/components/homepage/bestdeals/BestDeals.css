@@ -1,0 +1,50 @@
+.best_deal_heading span{
+    color: #d60609;
+}
+.best_deals{
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    background-color: #F5F5F7;
+    
+}
+.best_deal_heading{
+    position: absolute;
+    left: 33%;
+}
+.top_deal_products{
+    /* height: 355px; */
+    height: fit-content;
+    width: 290px;
+    background-color: #FFFFFF;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+.top_deal_offer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+}
+.top_deal_product_price{
+    display: flex;
+    gap: 3rem;
+}
+.offerbtn{
+    background-color: #D50104;
+    color: #F5F5F7;
+  border: none;
+  padding: 8px 10px 8px 10px;
+  height: 30px;
+  width: 120px;
+  border-radius: 4px;
+}
+.top_deal_offer p{
+    color: #D50104;
+}
+
+
+

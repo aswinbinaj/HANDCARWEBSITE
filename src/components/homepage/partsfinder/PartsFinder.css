@@ -1,0 +1,41 @@
+.parts_finder{
+    height: 125px;
+    width: 100%;
+    background: linear-gradient(to right, #f07b7d, #D50104);
+    position: relative;
+    display: flex;
+}
+.partsfinder_content{
+    height: 162px;
+    width: 40%;
+    position: absolute;
+    left: 120px;
+    top: 28px;
+    font-weight: 600;
+    font-size: 28px;
+    color: #FFFFFF;
+}
+.parts_finder_search{
+    position: absolute;
+    top: 28px;
+    right: 130px;
+    display: flex;
+    gap: 8px;
+}
+.parts_finder_search input{
+    width: 420px;
+    height: 50px;
+}
+.parts_finder_search button{
+    width: 125px;
+    height: 47px;
+    border-radius: 6px;
+    border: none;
+    background-color: #191919;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+input::placeholder{
+    padding: 10px;
+    font-size: 16px;
+}

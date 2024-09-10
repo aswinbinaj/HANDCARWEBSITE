@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+}
+.nav_rightside ul {
+  display: flex;
+  gap: 2rem;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29.4px;
+}
+li {
+  list-style: none;
+}
+.nav_btn {
+  padding: 9px 32px 9px 32px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.sign_up_btn {
+  background-color: #191919;
+  color: white;
+  border: none;
+}
