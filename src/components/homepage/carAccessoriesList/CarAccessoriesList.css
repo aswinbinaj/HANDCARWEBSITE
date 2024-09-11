@@ -1,0 +1,21 @@
+.car_accessories_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3%;
+}
+.car_accessories_header button {
+  padding: 13px, 32px, 13px, 32px;
+  width: 200px;
+  height: 30px;
+  background-color: #db1215;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 600;
+}
+.top_brand_accessories{
+    height: fit-content;
+    width: 308px;
+    background-color: rgb(250, 245, 245);
+}

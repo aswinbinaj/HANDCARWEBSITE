@@ -1,26 +1,25 @@
 import React from "react";
-import "../bestdeals/BestDeals.css";
-import top_deal_product_img from "../../../assets/top_deal_product_img.png";
+import "../carAccessoriesList/CarAccessoriesList.css";
 import star_icon from "../../../assets/star_icon.png";
 import open_star_icon from "../../../assets/open_star_icon.png";
-const BestDeals = () => {
+import top_deal_product_img from "../../../assets/top_deal_product_img.png";
+import topbrand_accessories from "../../../assets/topbrand_accessories.png";
+const CarAccessoriesList = () => {
   return (
-    <div className="best_deals">
-      <div className="best_deal_heading">
-        <h1>
-          Today's Deals <span>Upto 60% OFF</span>
-        </h1>
+    <div className="car_accessories_list_container">
+      <div className="car_accessories_header">
+        <h1>Discover Car Accessories From Top Brands</h1>
+        <button>View all Products</button>
       </div>
-
       <div className="listof_top_deal_products">
         
-        <div className="top_deal_products">
+        <div className="top_deal_products top_brand_accessories">
           <div className="top_deal_product_img">
-            <img src={top_deal_product_img} alt="" srcset="" />
+            <img src={topbrand_accessories} alt="" srcset="" />
           </div>
           <div className="top_deal_offer">
             <button className="offerbtn">Upto 30% OFF</button>
-            <p>Deal of the day</p>
+            {/* <p>Deal of the day</p> */}
           </div>
           <div className="top_deal_product_description">
             <p>UNITOPSCI Wireless Apple CarPlay Portable Car Stereo..</p>
@@ -38,13 +37,13 @@ const BestDeals = () => {
           </div>
         </div>
 
-        <div className="top_deal_products">
+        <div className="top_deal_products top_brand_accessories">
           <div className="top_deal_product_img">
-            <img src={top_deal_product_img} alt="" srcset="" />
+            <img src={topbrand_accessories} alt="" srcset="" />
           </div>
           <div className="top_deal_offer">
             <button className="offerbtn">Upto 30% OFF</button>
-            <p>Deal of the day</p>
+            {/* <p>Deal of the day</p> */}
           </div>
           <div className="top_deal_product_description">
             <p>UNITOPSCI Wireless Apple CarPlay Portable Car Stereo..</p>
@@ -61,13 +60,13 @@ const BestDeals = () => {
             <p>AED 199</p>
           </div>
         </div>
-        <div className="top_deal_products">
+        <div className="top_deal_products top_brand_accessories">
           <div className="top_deal_product_img">
-            <img src={top_deal_product_img} alt="" srcset="" />
+            <img src={topbrand_accessories} alt="" srcset="" />
           </div>
           <div className="top_deal_offer">
             <button className="offerbtn">Upto 30% OFF</button>
-            <p>Deal of the day</p>
+            {/* <p>Deal of the day</p> */}
           </div>
           <div className="top_deal_product_description">
             <p>UNITOPSCI Wireless Apple CarPlay Portable Car Stereo..</p>
@@ -84,13 +83,13 @@ const BestDeals = () => {
             <p>AED 199</p>
           </div>
         </div>
-        <div className="top_deal_products">
+        <div className="top_deal_products top_brand_accessories">
           <div className="top_deal_product_img">
-            <img src={top_deal_product_img} alt="" srcset="" />
+            <img src={topbrand_accessories} alt="" srcset="" />
           </div>
           <div className="top_deal_offer">
             <button className="offerbtn">Upto 30% OFF</button>
-            <p>Deal of the day</p>
+            {/* <p>Deal of the day</p> */}
           </div>
           <div className="top_deal_product_description">
             <p>UNITOPSCI Wireless Apple CarPlay Portable Car Stereo..</p>
@@ -112,4 +111,4 @@ const BestDeals = () => {
   );
 };
 
-export default BestDeals;
+export default CarAccessoriesList;

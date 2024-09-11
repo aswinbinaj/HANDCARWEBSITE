@@ -1,0 +1,57 @@
+.accessories_by_categories_container {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  background-color: #f5f5f7;
+}
+.accessories_by_category_heading {
+  position: absolute;
+  left: 33%;
+  margin-top: 5%;
+}
+.different_accessories {
+  height: 208px;
+  width: 597px;
+  background-color: #ffffff;
+  margin-top: 13%;
+  padding: 5px;
+  border-radius: 10px;
+}
+.accessories_content {
+  padding: 20px;
+}
+.accessories_explore_btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 5%;
+}
+.accessories_explore_btn p {
+  color: #db1215;
+  font-weight: 700;
+  font-size: 20px;
+}
+.accessories_img {
+  position: relative;
+  left: 62%;
+  bottom: 85%;
+}
+.exterior_img {
+  left: 40%;
+}
+.car_gadget_img {
+  left: 49%;
+}
+.performance_accessories_img {
+  left: 55%;
+}
+.accessories_by_category {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.second_section {
+  position: relative;
+  bottom: 22%;
+}
