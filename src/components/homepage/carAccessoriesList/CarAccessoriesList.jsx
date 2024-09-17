@@ -18,11 +18,11 @@ const CarAccessoriesList = () => {
             <img src={topbrand_accessories} alt="" srcset="" />
           </div>
           <div className="top_deal_offer">
-            <button className="offerbtn">Upto 30% OFF</button>
+            <button className="offerbtn car_accessories_offerbtn">30% OFF</button>
             {/* <p>Deal of the day</p> */}
           </div>
           <div className="top_deal_product_description">
-            <p>UNITOPSCI Wireless Apple CarPlay Portable Car Stereo..</p>
+            <p>Bosch F002H60041 Front Brake Pad for Passenger Cars <br /> (Set of 4)</p>
           </div>
           <div className="rating_icon">
             <img src={star_icon} alt="" srcset="" />
@@ -42,11 +42,11 @@ const CarAccessoriesList = () => {
             <img src={topbrand_accessories} alt="" srcset="" />
           </div>
           <div className="top_deal_offer">
-            <button className="offerbtn">Upto 30% OFF</button>
+            <button className="offerbtn car_accessories_offerbtn "> 30% OFF</button>
             {/* <p>Deal of the day</p> */}
           </div>
           <div className="top_deal_product_description">
-            <p>UNITOPSCI Wireless Apple CarPlay Portable Car Stereo..</p>
+            <p>Bosch F002H60041 Front Brake Pad for Passenger Cars <br /> (Set of 4)</p>
           </div>
           <div className="rating_icon">
             <img src={star_icon} alt="" srcset="" />
@@ -65,11 +65,11 @@ const CarAccessoriesList = () => {
             <img src={topbrand_accessories} alt="" srcset="" />
           </div>
           <div className="top_deal_offer">
-            <button className="offerbtn">Upto 30% OFF</button>
+            <button className="offerbtn car_accessories_offerbtn"> 30% OFF</button>
             {/* <p>Deal of the day</p> */}
           </div>
           <div className="top_deal_product_description">
-            <p>UNITOPSCI Wireless Apple CarPlay Portable Car Stereo..</p>
+            <p>Bosch F002H60041 Front Brake Pad for Passenger Cars <br /> (Set of 4)</p>
           </div>
           <div className="rating_icon">
             <img src={star_icon} alt="" srcset="" />
@@ -88,11 +88,11 @@ const CarAccessoriesList = () => {
             <img src={topbrand_accessories} alt="" srcset="" />
           </div>
           <div className="top_deal_offer">
-            <button className="offerbtn">Upto 30% OFF</button>
+            <button className="offerbtn car_accessories_offerbtn"> 30% OFF</button>
             {/* <p>Deal of the day</p> */}
           </div>
           <div className="top_deal_product_description">
-            <p>UNITOPSCI Wireless Apple CarPlay Portable Car Stereo..</p>
+            <p>Bosch F002H60041 Front Brake Pad for Passenger Cars <br /> (Set of 4)</p>
           </div>
           <div className="rating_icon">
             <img src={star_icon} alt="" srcset="" />

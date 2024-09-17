@@ -1,0 +1,12 @@
+.spare_parts_slider{
+    position: relative;
+    margin-top: 5%;
+}
+.spare_parts_slider_heading{
+    position: absolute;
+    left: 35%
+}
+.spare_parts_slider_img img{
+    margin-top: 5%;
+    margin-left: 10%;
+}

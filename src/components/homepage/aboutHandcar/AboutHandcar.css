@@ -1,0 +1,41 @@
+.about_handcar_container {
+  position: relative;
+}
+.about_handcar {
+  display: flex;
+}
+.about_handcar_contents {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.about_handcar_contents h1{
+    font-weight: 800;
+}
+.about_handcar_content{
+    height: 30vh;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+}
+.about_handcar_content p{
+    margin-top: 4%;
+    font-weight: 500;
+    font-size: 18px;
+    /* line-height: 33.6px; */
+}
+.counts {
+  display: flex;
+  font-weight: 800;
+  font-size: 48px;
+  color: #db1215;
+  gap: 11rem;
+  margin-top: 3%;
+}
+.customer_and_product_name {
+  display: flex;
+  gap: 5rem;
+  font-weight: 700;
+  font-size: 24px;
+}

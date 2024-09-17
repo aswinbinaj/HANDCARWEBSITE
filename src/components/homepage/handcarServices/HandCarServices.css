@@ -1,0 +1,58 @@
+.handcar_services_container {
+  margin-top: 2%;
+}
+.handcar_services {
+  display: flex;
+  justify-content: space-around;
+}
+.handcar_services_heading {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 20vh;
+  width: 33%;
+  margin-top: 8%;
+  margin-left: 5%;
+}
+.handcar_services_heading h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+.handcar_services_heading p {
+  font-weight: 500;
+  font-size: 24px;
+}
+.handcar_services_heading_img{
+    margin-bottom: -2%;
+}
+.various_handcar_services{
+    height: 40vh;
+    width: 80%;
+    background: linear-gradient(to right, #F56F71,#D60205);
+    position: relative;
+    left: 10%;
+    border-radius: 10px;  
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.car_service{
+    height: 32vh;
+    width: 27%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 3%;
+    
+    padding: 25px;
+}
+.car_service p{
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.car_service img{
+    margin-left: 30%;
+}

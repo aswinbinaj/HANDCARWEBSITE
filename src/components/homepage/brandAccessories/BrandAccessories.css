@@ -1,0 +1,53 @@
+.brand_accessories_container {
+  height: 75vh;
+  width: 100%;
+  /* background-color: red; */
+  position: relative;
+}
+.brand_accessories_heading {
+  position: absolute;
+  left: 35%;
+}
+.brand_accessories {
+  margin-top: 5%;
+}
+
+.brand_accessories_content {
+  /* height: 120px;
+  width: 500px; */
+  /* background-color: red; */
+  position: absolute;
+  top: 20%;
+  left: 13%;
+  display: flex;
+
+  gap: 10px;
+}
+.accessories_scroll_btn {
+  height: 82px;
+  width: 82px;
+  background-color: #FBFBFD;
+  padding: 15px;
+  margin-top: 15%;
+  cursor: pointer;
+}
+.brand_accessories_products {
+  height: 400px;
+  width: 485px;
+  background-color: #FBFBFD;
+  padding: 25px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+}
+.pioneer_logo {
+  position: absolute;
+  top: 12%;
+  left: 20%;
+}
+.about_pioneer {
+  height: 25px;
+  width: 270px;
+  background-color: #ffe500;
+  padding: 2px;
+  border-radius: 5px;
+}

@@ -1,0 +1,50 @@
+.contact_form_container {
+  height: 58vh;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+ display: flex;
+ gap: 15rem;
+  /* background-image: url(../../../assets/contactfrom_bg_car.jpg);
+  background-size: cover;
+  background-position: center; */
+  /* opacity: 0.1 ; */
+ 
+}
+.contact_details_logo {
+  height: 35px;
+  width: 35px;
+  background-color: yellowgreen;
+  padding: 5px;
+  /* display: flex;
+    flex-direction: column; */
+}
+.contact_details_and_logo {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.contact_logo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact_detail_content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.name_and_ph_no input {
+  padding: 15px;
+  width: 25%;
+}
+.contact_form_email input {
+  padding: 15px;
+  width: 50%;
+}
+.contact_form_message input {
+    padding: 55px;
+    width: 50%;
+}
+

@@ -1,0 +1,33 @@
+.brand_spare_parts_container {
+  height: 55vh;
+  width: 100%;
+  background-color: #f5f5f7;
+  margin-top: 5%;
+}
+.brand_spare_parts_content {
+  padding: 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.brand_spare_parts_content h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+.brand_spare_parts_content p {
+  font-weight: 500;
+  font-size: 24px;
+}
+.brand_spare_parts_content button {
+  width: 150px;
+  height: 45px;
+  padding: 13px, 32px, 13px, 32px;
+  border-radius: 6px;
+  background-color: #d60205;
+  color: #ffffff;
+  border: none;
+}
+.brand_spare_parts {
+  display: flex;
+  justify-content: space-around;
+}
