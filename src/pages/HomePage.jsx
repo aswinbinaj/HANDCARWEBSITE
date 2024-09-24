@@ -15,6 +15,9 @@ import AboutHandcar from "../components/homepage/aboutHandcar/AboutHandcar";
 import Testimonials from "../components/homepage/testimonials/Testimonials";
 import FAQ from "../components/homepage/faq/FAQ";
 import ContactForm from "../components/homepage/contactForm/ContactForm";
+import Footer from "../components/footer/Footer";
+// import LoginPage from "../components/loginpage/LoginPage";
+// import OtpVerification from "../components/loginpage/OtpVerification";
 
 const HomePage = () => {
   return (
@@ -22,19 +25,23 @@ const HomePage = () => {
       <Pageredirection />
       <PartsFinder />
       <HandCarFeatures />
-      <ExclusiveOffers />
       <BestDeals />
+      <ExclusiveOffers />
+      
       <GuaranteedFeatures />
       <AccessoriesByCategories />
       <CarAccessoriesList />
+      
+      {/* <BrandAccessories /> */}
       <BrandSpareParts />
-      <BrandAccessories />
       <HandCarServices/>
       <SparePartsSlider/>
       <AboutHandcar/>
       <Testimonials/>
       <FAQ/>
       <ContactForm/>
+      {/* <LoginPage/> */}
+      {/* <OtpVerification/> */}
     </div>
   );
 };

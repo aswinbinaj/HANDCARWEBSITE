@@ -3,8 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 5%;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #FFFFFF;
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
   position: relative;
 }
 
@@ -144,23 +144,38 @@
   font-size: 16px;
 }
 
+@media screen and (max-width: 1024px) {
+  .nav_menu {
+    gap: 1rem;
+  }
+  
+  .nav_menu li a {
+    font-size: 14px;
+  }
+  
+  .nav_btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .nav_menu, .nav_buttons {
     display: none;
   }
-
+  
   .nav_rightside {
-    gap: 0;
+    gap: 0.5rem;
   }
-
+  
   .menu_toggle {
     display: block;
   }
-
+  
   .mobile_menu {
     display: block;
   }
-
+  
   .mobile_menu .nav_btn {
     width: 100%;
     margin-top: 0.5rem;
@@ -169,15 +184,114 @@
 
 @media screen and (max-width: 480px) {
   .navbar {
-    padding: 12px 3%;
+    padding: 10px 3%;
   }
-
+  
   .nav_leftside .logo {
     height: 30px;
   }
-
+  
   .icon {
     width: 20px;
     height: 20px;
   }
+  
+  .nav_rightside {
+    gap: 0.25rem;
+  }
+}
+
+/* New breakpoint for iPhone 12 Pro and similar devices */
+@media screen and (max-width: 390px) {
+  .navbar {
+    padding: 8px 2%;
+  }
+  
+  .nav_leftside .logo {
+    height: 28px;
+  }
+  
+  .icon {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .nav_rightside {
+    gap: 0.5rem;
+  }
+  
+  .menu_toggle {
+    width: 25px;
+    height: 18px;
+  }
+  
+  .mobile_menu {
+    padding: 0.75rem;
+  }
+  
+  .mobile_menu a {
+    font-size: 14px;
+  }
+  
+  .mobile_menu .nav_btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navbar {
+    padding: 6px 2%;
+  }
+  
+  .nav_leftside .logo {
+    height: 25px;
+  }
+  
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .menu_toggle {
+    width: 22px;
+    height: 16px;
+  }
+}
+
+
+/* Add this to your Header.css file */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* High z-index to ensure it's above other elements */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #FFFFFF;
+  color: rgb(0, 0, 0);
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
 }

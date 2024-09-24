@@ -4,30 +4,71 @@
   background-color: #f5f5f7;
   margin-top: 5%;
 }
+
+.brand_spare_parts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .brand_spare_parts_content {
   padding: 75px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+
 .brand_spare_parts_content h1 {
   font-weight: 700;
   font-size: 40px;
 }
+
 .brand_spare_parts_content p {
   font-weight: 500;
   font-size: 24px;
 }
+
 .brand_spare_parts_content button {
   width: 150px;
   height: 45px;
-  padding: 13px, 32px, 13px, 32px;
   border-radius: 6px;
   background-color: #d60205;
   color: #ffffff;
   border: none;
+  cursor: pointer;
 }
-.brand_spare_parts {
-  display: flex;
-  justify-content: space-around;
+
+.brand_spare_parts_img img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+/* Media query for small devices */
+@media (max-width: 768px) {
+  .brand_spare_parts {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .brand_spare_parts_content {
+    padding: 20px;
+  }
+
+  .brand_spare_parts_content h1 {
+    font-size: 28px;
+  }
+
+  .brand_spare_parts_content p {
+    font-size: 18px;
+  }
+
+  .brand_spare_parts_content button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .brand_spare_parts_img {
+    margin-top: 20px;
+  }
 }

@@ -5,6 +5,7 @@ import car_seat from "../../../assets/car_seat.png";
 import car_exterior from "../../../assets/car_exterior.png";
 import car_gadgets from "../../../assets/car_gadgets.png";
 import car_performance_accessories from "../../../assets/car_performance_accessories.png";
+
 const AccessoriesByCategories = () => {
   return (
     <div className="accessories_by_categories_container">
@@ -29,7 +30,7 @@ const AccessoriesByCategories = () => {
           </div>
 
           <div className="accessories_img">
-            <img src={car_seat} alt="" srcset="" />
+            <img src={car_seat} alt="Car Interior Accessories" />
           </div>
         </div>
 
@@ -48,8 +49,8 @@ const AccessoriesByCategories = () => {
             </div>
           </div>
 
-          <div className="accessories_img exterior_img">
-            <img src={car_exterior} alt="" srcset="" />
+          <div className="accessories_img">
+            <img src={car_exterior} alt="Car Exterior Accessories" />
           </div>
         </div>
       </div>
@@ -70,8 +71,8 @@ const AccessoriesByCategories = () => {
             </div>
           </div>
 
-          <div className="accessories_img car_gadget_img">
-            <img src={car_gadgets} alt="" srcset="" />
+          <div className="accessories_img">
+            <img src={car_gadgets} alt="Electronic & Gadgets" />
           </div>
         </div>
 
@@ -90,8 +91,8 @@ const AccessoriesByCategories = () => {
             </div>
           </div>
 
-          <div className="accessories_img performance_accessories_img">
-            <img src={car_performance_accessories} alt="" srcset="" />
+          <div className="accessories_img">
+            <img src={car_performance_accessories} alt="Performance Accessories" />
           </div>
         </div>
       </div>

@@ -1,28 +1,38 @@
 .brand_accessories_container {
   height: 75vh;
   width: 100%;
-  /* background-color: red; */
   position: relative;
 }
+
 .brand_accessories_heading {
   position: absolute;
   left: 35%;
 }
+
 .brand_accessories {
   margin-top: 5%;
 }
 
 .brand_accessories_content {
-  /* height: 120px;
-  width: 500px; */
-  /* background-color: red; */
   position: absolute;
   top: 20%;
   left: 13%;
   display: flex;
-
   gap: 10px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
 }
+
+/* Hide scrollbar but allow scrolling */
+.brand_accessories_content::-webkit-scrollbar {
+  display: none;
+}
+
+.brand_accessories_content {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .accessories_scroll_btn {
   height: 82px;
   width: 82px;
@@ -31,6 +41,7 @@
   margin-top: 15%;
   cursor: pointer;
 }
+
 .brand_accessories_products {
   height: 400px;
   width: 485px;
@@ -39,15 +50,39 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 10px;
 }
+
 .pioneer_logo {
   position: absolute;
   top: 12%;
   left: 20%;
 }
+
 .about_pioneer {
   height: 25px;
   width: 270px;
   background-color: #ffe500;
   padding: 2px;
   border-radius: 5px;
+}
+
+/* Responsive design for small devices */
+@media (max-width: 768px) {
+  .brand_accessories_heading {
+    left: 10%;
+  }
+
+  .brand_accessories_content {
+    top: 15%;
+    left: 5%;
+    flex-wrap: nowrap;
+  }
+
+  .brand_accessories_products {
+    width: 300px; /* Reduce width */
+    flex-shrink: 0; /* Ensure items don’t shrink */
+  }
+
+  .accessories_scroll_btn {
+    display: none; /* Optionally hide the scroll buttons on small devices */
+  }
 }
