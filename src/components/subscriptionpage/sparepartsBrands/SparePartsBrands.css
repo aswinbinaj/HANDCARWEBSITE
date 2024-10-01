@@ -1,0 +1,94 @@
+.spare-parts-container {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .spare_parts_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .spare_parts_header h1 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+  
+  .header-image {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .brand-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  
+  .brand-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .brand-logo {
+    max-width: 150px;
+    margin-bottom: 15px;
+  }
+  
+  .enquire-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .see_more_brands_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .see_more_brands_btn button {
+    height: 56px;
+    width: 256px;
+    border-radius: 6px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 768px) {
+    .spare_parts_header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  
+    .spare_parts_header h1 {
+      margin-right: 20px;
+    }
+  
+    .brand-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .brand-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }

@@ -4,7 +4,7 @@ const Pageredirection = () => {
   return (
     <div className="home_page_redirection">
       <p>Accessories</p>
-      <p>Spare Parts</p>
+      <p>Auto Parts</p>
       <p>Services</p>
     </div>
   );

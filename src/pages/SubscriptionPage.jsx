@@ -8,6 +8,7 @@ import MaintainancePlans from '../components/subscriptionpage/maintainancePlans/
 import CarAccessoriesList from "../components/homepage/carAccessoriesList/CarAccessoriesList";
 import AccessoriesByCategories from "../components/homepage/accessoriesbycategories/AccessoriesByCategories";
 import Footer from '../components/footer/Footer'
+import LuxuryPlan from '../components/subscriptionpage/subscriptionplans/LuxuryPlan'
 
 
 
@@ -22,6 +23,7 @@ const SubscriptionPage = () => {
       <MaintainancePlans/>
       <CarAccessoriesList />
       <AccessoriesByCategories />
+      {/* <LuxuryPlan/> */}
       <Footer/>
       
       

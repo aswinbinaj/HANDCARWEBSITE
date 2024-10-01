@@ -16,12 +16,14 @@ import Testimonials from "../components/homepage/testimonials/Testimonials";
 import FAQ from "../components/homepage/faq/FAQ";
 import ContactForm from "../components/homepage/contactForm/ContactForm";
 import Footer from "../components/footer/Footer";
+import Header from "../components/Header/Header";
 // import LoginPage from "../components/loginpage/LoginPage";
 // import OtpVerification from "../components/loginpage/OtpVerification";
 
 const HomePage = () => {
   return (
     <div>
+      <Header/>
       <Pageredirection />
       <PartsFinder />
       <HandCarFeatures />

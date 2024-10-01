@@ -1,7 +1,7 @@
 .maintainance_plans_container{
-    height: 135vh;
+    height: 195vh;
     width: 100%;
-    background-color: rgb(199, 164, 164);
+    background-color: #FFFFFF;
 }
 .subscriptionplans_content {
     display: flex;
@@ -50,7 +50,7 @@
   }
   
   .subscription_plan {
-    margin-top: 8%;
+    margin-top: 12%;
     display: flex;
     justify-content: space-around;
   }
@@ -141,3 +141,22 @@
     font-weight: 700;
   }
   
+  .maintainancepage_buttons{
+    background-color:#EEEEEE;
+  }
+  .maintainance_sixmonth{
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+  .maintainancepage_header_img img{
+    height: 330px;
+    width: 1200px;
+    /* position: relative;
+    left: 8%; */
+    margin-top: 5%;
+    margin-left: 12%;
+    
+  }
+  .maintainance_plan{
+    margin-top: 18%;
+  }

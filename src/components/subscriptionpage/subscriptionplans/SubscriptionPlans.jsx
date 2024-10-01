@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "../subscriptionplans/SubscriptionPlans.css";
 import subscriptionpage_underline from "../../../assets/subscriptionpage_underline.svg";
 import { TiTick } from "react-icons/ti";
+import LuxuryPlan from "../subscriptionplans/LuxuryPlan.jsx";
 
 const SubscriptionPlans = () => {
+  const [showLuxuryPlan, setShowLuxuryPlan] = useState(false);
+
+  const handleLuxuryClick = () => {
+    setShowLuxuryPlan(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowLuxuryPlan(false);
+  };
+
   return (
     <div className="subscriptionplans_container">
       <div className="subscriptionplans_content">
@@ -12,7 +23,6 @@ const SubscriptionPlans = () => {
           <img
             src={subscriptionpage_underline}
             alt=""
-            srcset=""
             className="subscription_underline"
           />
         </div>
@@ -49,7 +59,6 @@ const SubscriptionPlans = () => {
               <div className="plan_feature_icon">
                 <TiTick />
               </div>
-
               <div className="plan_feature_content">
                 <p>
                   Unlimited Exterior wash using high- <br />
@@ -58,21 +67,20 @@ const SubscriptionPlans = () => {
               </div>
             </div>
             <br />
-
             <div className="plan_feature_points">
               <div className="plan_feature_icon">
                 <TiTick />
               </div>
-
               <div className="plan_feature_content">
-                <p>cleaning of windows and mirrors</p>
+                <p>Cleaning of windows and mirrors</p>
               </div>
             </div>
-            <br /> <br /> <br /> <br /> 
-
+            <br />
+            <br />
+            <br />
+            <br />
             <div className="subscription_discounts">
               <p>Multiple Cars Discount</p>
-
               <div className="subscription_plans_and_discounts">
                 <div className="number_of_plans">
                   <div className="plan_number">1</div>
@@ -107,7 +115,7 @@ const SubscriptionPlans = () => {
                 </div>
               </div>
             </div>
-            <button className="plan_subscribe_btn">Subscribe</button>
+            <button className="plan_subscribe_btn"onClick={handleLuxuryClick}>Subscribe</button>
           </div>
         </div>
 
@@ -127,11 +135,8 @@ const SubscriptionPlans = () => {
               <div className="plan_feature_icon">
                 <TiTick />
               </div>
-
               <div className="plan_feature_content">
-                <p>
-                Unlimited All Premium Wash Plan services
-                </p>
+                <p>Unlimited All Premium Wash Plan services</p>
               </div>
             </div>
             <br />
@@ -139,7 +144,6 @@ const SubscriptionPlans = () => {
               <div className="plan_feature_icon">
                 <TiTick />
               </div>
-
               <div className="plan_feature_content">
                 <p>Full interior shampoo</p>
               </div>
@@ -149,7 +153,6 @@ const SubscriptionPlans = () => {
               <div className="plan_feature_icon">
                 <TiTick />
               </div>
-
               <div className="plan_feature_content">
                 <p>Wax application</p>
               </div>
@@ -159,15 +162,12 @@ const SubscriptionPlans = () => {
               <div className="plan_feature_icon">
                 <TiTick />
               </div>
-
               <div className="plan_feature_content">
                 <p>Tire Dressing</p>
               </div>
             </div>
-
             <div className="subscription_discounts">
               <p>Multiple Cars Discount</p>
-
               <div className="subscription_plans_and_discounts">
                 <div className="number_of_plans">
                   <div className="plan_number">1</div>
@@ -202,7 +202,7 @@ const SubscriptionPlans = () => {
                 </div>
               </div>
             </div>
-            <button className="plan_subscribe_btn">Subscribe</button>
+            <button className="plan_subscribe_btn" onClick={handleLuxuryClick}>Subscribe</button>
           </div>
         </div>
 
@@ -222,11 +222,8 @@ const SubscriptionPlans = () => {
               <div className="plan_feature_icon">
                 <TiTick />
               </div>
-
               <div className="plan_feature_content">
-                <p>
-                Unlimited All Premium Wash Plan services
-                </p>
+                <p>Unlimited All Premium Wash Plan services</p>
               </div>
             </div>
             <br />
@@ -234,9 +231,8 @@ const SubscriptionPlans = () => {
               <div className="plan_feature_icon">
                 <TiTick />
               </div>
-
               <div className="plan_feature_content">
-                <p>Engine compartement wash</p>
+                <p>Engine compartment wash</p>
               </div>
             </div>
             <br />
@@ -244,7 +240,6 @@ const SubscriptionPlans = () => {
               <div className="plan_feature_icon">
                 <TiTick />
               </div>
-
               <div className="plan_feature_content">
                 <p>High Definition waxing</p>
               </div>
@@ -254,15 +249,12 @@ const SubscriptionPlans = () => {
               <div className="plan_feature_icon">
                 <TiTick />
               </div>
-
               <div className="plan_feature_content">
                 <p>Leather conditioning</p>
               </div>
             </div>
-
             <div className="subscription_discounts">
               <p>Multiple Cars Discount</p>
-
               <div className="subscription_plans_and_discounts">
                 <div className="number_of_plans">
                   <div className="plan_number">1</div>
@@ -297,10 +289,24 @@ const SubscriptionPlans = () => {
                 </div>
               </div>
             </div>
-            <button className="plan_subscribe_btn">Subscribe</button>
+            <button className="plan_subscribe_btn" onClick={handleLuxuryClick}>
+              Subscribe
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Luxury Plan Popup */}
+      {showLuxuryPlan && (
+        <div className="popup-overlay">
+          <div className="subscription_plan_popup">
+            <div className="subscription_plan_popup_content">
+              <button className="close-popup" onClick={handleClosePopup}>x</button>
+              <LuxuryPlan />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

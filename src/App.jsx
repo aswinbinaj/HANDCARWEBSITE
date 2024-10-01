@@ -6,6 +6,12 @@ import Footer from "./components/footer/Footer";
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import SubscriptionPage from "./pages/SubscriptionPage";
 
+import ErrorPage from "./pages/ErrorPage";
+import SparePartsPage from "./pages/SparePartsPage";
+import ServicePage from "./pages/ServicePage";
+import AccessoriesPage from "./pages/AccessoriesPage";
+
+
 const App = () => {
   return (
     <div>
@@ -16,6 +22,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/subscription" element={<SubscriptionPage />} />
+        <Route path="/spareparts" element={<SparePartsPage/>} />
+        <Route path="/servicepage" element={<ServicePage/>} />
+        <Route path="/accessories" element={<AccessoriesPage/>}/>
+        <Route path="*" element={<ErrorPage/>}/>
       </Routes>
       </BrowserRouter>
     </div>

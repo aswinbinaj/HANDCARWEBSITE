@@ -1,0 +1,69 @@
+.luxury_plan_container{
+    height: 765px;
+    width: 490px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 22%;
+    /* bottom: 95%; */
+    /* right: 98%; */
+    border-radius: 5px;
+    padding: 35px;
+   
+}
+.luxury_plan_content h1{
+    font-weight: 600;
+}
+.luxury_plan_content span{
+    color: #1D9112;
+}
+.ten_percentage_off{
+    height: 201px;
+    width: 304px;
+}
+.plan_popup{
+    height: 30vh;
+}
+.luxury_plan_popup{
+    height: 450px;
+    width: 350px;
+    background-color: #F7F7F7;
+    margin-left: 8%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+}
+.luxury_pan_popup_headline{
+    display: flex;
+    justify-content: space-between;
+}
+.luxury_plan_popup_price{
+    display: flex;
+    align-items: center;
+}
+.luxury_plan_popup_features{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+.plan_feature_content p{
+    margin: 0;
+    line-height: 1.5;;
+}
+.luxury_plan_popup_button{
+    height: 56px;
+    width: 325px;
+    background-color: #191919;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 15px;
+    font-weight: 600;
+}
+.current_plan{
+    background-color: #FFFFFF;
+    color: #191919;
+    border: 2px solid #191919;
+}

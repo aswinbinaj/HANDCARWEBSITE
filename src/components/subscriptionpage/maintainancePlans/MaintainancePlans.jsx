@@ -1,11 +1,16 @@
 import React from 'react'
 import "../maintainancePlans/MaintainancePlans.css"
 import subscriptionpage_underline from "../../../assets/subscriptionpage_underline.svg";
+import maintainance_page_header_img from "../../../assets/maintainance_page_header_img.svg";
 import { TiTick } from "react-icons/ti";
 const MaintainancePlans = () => {
   return (
     <div className='maintainance_plans_container'>
+         <div className="maintainancepage_header_img">
+            <img src={maintainance_page_header_img} alt="" srcset="" />
+        </div>
       <div className="subscriptionplans_content">
+       
         <div className="subscription_heading">
           <h1>Plans for Maintainance Services</h1>
           <img
@@ -18,8 +23,8 @@ const MaintainancePlans = () => {
         <p>
         Explore our subscription plans for additional services and keep your car looking its best year- <br />round. Enjoy exclusive benefits and regular maintenance with our comprehensive packages.
         </p>
-        <div className="subscriptionpage_buttons">
-          <button className="sub_sixmonth">6 months</button>
+        <div className="subscriptionpage_buttons maintainancepage_buttons">
+          <button className="sub_sixmonth maintainance_sixmonth">6 months</button>
           <button className="sub_twelvemonth">12 months</button>
         </div>
         <p>
@@ -28,7 +33,7 @@ const MaintainancePlans = () => {
         </p>
       </div>
 
-      <div className="subscription_plan">
+      <div className="subscription_plan maintainanace_plan">
         {/* Basic Plan */}
         <div className="basic_plan">
           <div className="plan_tittle">
@@ -48,8 +53,7 @@ const MaintainancePlans = () => {
 
               <div className="plan_feature_content">
                 <p>
-                  Unlimited Exterior wash using high- <br />
-                  pressure sprays Interior vacuuming
+                  Unlimited Synthetic oil changes
                 </p>
               </div>
             </div>
@@ -61,7 +65,7 @@ const MaintainancePlans = () => {
               </div>
 
               <div className="plan_feature_content">
-                <p>cleaning of windows and mirrors</p>
+                <p>Seasonal tire rotations</p>
               </div>
             </div>
             <br /> <br /> <br /> <br /> 
@@ -126,8 +130,7 @@ const MaintainancePlans = () => {
 
               <div className="plan_feature_content">
                 <p>
-                  Unlimited Exterior wash using high- <br />
-                  pressure sprays Interior vacuuming
+                All Basic Maintenance Plan services
                 </p>
               </div>
             </div>
@@ -138,7 +141,7 @@ const MaintainancePlans = () => {
               </div>
 
               <div className="plan_feature_content">
-                <p>cleaning of windows and mirrors</p>
+                <p>Brake pad replacements</p>
               </div>
             </div>
             <br />
@@ -148,7 +151,7 @@ const MaintainancePlans = () => {
               </div>
 
               <div className="plan_feature_content">
-                <p>Polishing and waxing services</p>
+                <p>Battery check and replacement</p>
               </div>
             </div>
             <br />
@@ -158,7 +161,7 @@ const MaintainancePlans = () => {
               </div>
 
               <div className="plan_feature_content">
-                <p>Interior and upholstery shampooing</p>
+                <p>Fluid top-offs</p>
               </div>
             </div>
 

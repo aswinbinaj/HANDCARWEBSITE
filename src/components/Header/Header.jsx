@@ -4,6 +4,7 @@ import heart_icons from "../../assets/heart_icons.svg";
 import shopping_cart from "../../assets/shopping_cart.svg";
 import "../Header/Header.css";
 import LoginPage from "../loginpage/LoginPage.jsx";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,10 +35,12 @@ const Header = () => {
             <>
               <ul className="nav_menu">
                 <li>
-                  <a href="#">Home</a>
+                  
+                <Link to="/">Home</Link>
+
                 </li>
                 <li>
-                  <a href="#">Subscribe</a>
+                <Link to="/subscription">Subscribe</Link>
                 </li>
                 <li>
                   <a href="#">Accessories</a>

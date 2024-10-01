@@ -63,7 +63,7 @@ const LoginPage = () => {
             Get updates on Calls/Whatsapp
           </label>
 
-          <div className="human_verification">
+          {/* <div className="human_verification">
 
             <div className="verification_box">
               <input type="checkbox" name="" id="" />
@@ -74,7 +74,7 @@ const LoginPage = () => {
               <img src={captcha_img} alt="" srcset="" />
             </div>
 
-          </div>
+          </div> */}
 
           <button className="login-button">Login with Password</button>
 
@@ -103,7 +103,7 @@ const LoginPage = () => {
             Get updates on Whatsapp
           </label>
 
-          <div className="human_verification">
+          {/* <div className="human_verification">
 
             <div className="verification_box">
               <input type="checkbox" name="" id="" />
@@ -114,7 +114,7 @@ const LoginPage = () => {
               <img src={captcha_img} alt="" srcset="" />
             </div>
 
-          </div>
+          </div> */}
 
 
           <button className="signup-button">Sign Up</button>
