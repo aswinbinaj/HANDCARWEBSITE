@@ -5,11 +5,11 @@
 
 .best_deals { 
     position: relative;
-    min-height: 75vh;
+    min-height: 70vh;
     width: 100%;
     background-color: #F5F5F7;
     padding: 2rem 0;
-    margin-left: 2%;
+    /* margin-left: 2%; */
 }
 
 .best_deal_heading { 
@@ -55,7 +55,9 @@
 }
 
 .listof_top_deal_products { 
+   
     display: flex;
+   justify-content: center;
     gap: 1rem;
     padding: 0 1rem;
     overflow-x: auto;
@@ -63,7 +65,7 @@
     -webkit-overflow-scrolling: touch;
 }
 
-/* Responsive adjustments */
+
 @media screen and (max-width: 1200px) {
     .best_deals {
         padding: 1rem 0;
@@ -111,7 +113,7 @@
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-.listof_top_deal_products {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
+/* .listof_top_deal_products {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+} */

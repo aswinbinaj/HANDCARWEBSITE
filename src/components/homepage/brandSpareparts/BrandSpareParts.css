@@ -1,5 +1,5 @@
 .brand_spare_parts_container {
-  height: 55vh;
+  height: 75vh;
   width: 100%;
   background-color: #f5f5f7;
   margin-top: 5%;
@@ -9,10 +9,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .brand_spare_parts_content {
-  padding: 75px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -20,12 +21,13 @@
 
 .brand_spare_parts_content h1 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 38px;
+  line-height: 1.2;
 }
 
 .brand_spare_parts_content p {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .brand_spare_parts_content button {
@@ -36,6 +38,11 @@
   color: #ffffff;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.brand_spare_parts_content button:hover {
+  background-color: #b50004;
 }
 
 .brand_spare_parts_img img {
@@ -44,7 +51,68 @@
   height: auto;
 }
 
-/* Media query for small devices */
+/* Media Queries */
+
+/* Large screens (desktops and larger) */
+@media (min-width: 1200px) {
+  .brand_spare_parts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;
+  }
+
+  .brand_spare_parts_content {
+    padding: 60px;
+    max-width: 600px;
+  }
+
+  .brand_spare_parts_content h1 {
+    font-size: 44px;
+    line-height: 1.3;
+  }
+
+  .brand_spare_parts_content p {
+    font-size: 24px;
+  }
+
+  .brand_spare_parts_content button {
+    width: 160px;
+    height: 50px;
+  }
+
+  .brand_spare_parts_img img {
+    max-width: 550px;
+    height: auto;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .brand_spare_parts_content {
+    padding: 40px;
+  }
+
+  .brand_spare_parts_content h1 {
+    font-size: 32px;
+  }
+
+  .brand_spare_parts_content p {
+    font-size: 20px;
+  }
+
+  .brand_spare_parts_content button {
+    width: 140px;
+    max-width: 180px;
+  }
+
+  .brand_spare_parts_img img {
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+/* Small screens (mobile devices) */
 @media (max-width: 768px) {
   .brand_spare_parts {
     flex-direction: column;
@@ -56,7 +124,7 @@
   }
 
   .brand_spare_parts_content h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .brand_spare_parts_content p {
@@ -66,9 +134,31 @@
   .brand_spare_parts_content button {
     width: 100%;
     max-width: 200px;
+    margin: 0 auto;
   }
 
   .brand_spare_parts_img {
     margin-top: 20px;
+  }
+
+  .brand_spare_parts_img img {
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .brand_spare_parts_content h1 {
+    font-size: 20px;
+  }
+
+  .brand_spare_parts_content p {
+    font-size: 16px;
+  }
+
+  .brand_spare_parts_content button {
+    width: 90%;
+    max-width: 180px;
   }
 }

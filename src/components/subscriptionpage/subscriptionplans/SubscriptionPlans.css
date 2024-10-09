@@ -1,59 +1,9 @@
-.subscriptionplans_container {
-  height: 135vh;
-  width: 100%;
-  background: linear-gradient(to bottom, #d34446,#FFFFFF);
-  /* background: linear-gradient(to bottom, #D50104 0%, #ebe5e5 40%, #FFFFFF 100%); */
-}
-.subscriptionplans_content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  position: relative;
-  top: 8%;
-}
-.subscription_heading h1 {
-  font-weight: 700;
-}
-.subscription_heading p {
-  font-weight: 500;
-}
-.subscription_underline {
-  margin-left: 47%;
-}
-.subscriptionplans_content p {
-  font-weight: 800;
-}
-.sub_offer {
-  color: #DB1215;
-}
-.subscriptionplans_content img {
-  width: 200px;
-}
-
-.subscriptionpage_buttons {
-  height: 70px;
-  width: 294px;
-  background-color: #ffd9d9;
-  border-radius: 99px;
-  padding: 6px;
-}
-.subscriptionpage_buttons button {
-  height: 54px;
-  width: 139px;
-  border-radius: 99px;
-  border: none;
-  color: #da1e21;
-  font-weight: 700;
-}
-.sub_twelvemonth {
-  background-color: #ffd9d9;
-}
-
 .subscription_plan {
-  margin-top: 8%;
+  margin-top: 2%;
   display: flex;
   justify-content: space-around;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
 }
 
 .basic_plan {
@@ -65,69 +15,27 @@
   padding: 22px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-.plan_price {
-  display: flex;
-  align-items: center;
+  gap: 12px;
+  scroll-snap-align: start;
 }
 
-.plan_feature_points {
-  /* height: 24px;
-    width: 24px;
-    border-radius: 99px;
-    background-color: #E1F7DF;
-    
-    display: flex; */
-  display: flex;
-  gap: 15px;
-}
-.plan_feature_icon {
-  height: 24px;
-  width: 24px;
-  border-radius: 99px;
-  background-color: #e1f7df;
-  padding: 3px;
-}
+@media (max-width: 768px) {
+  .subscription_plan {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    scroll-snap-type: x mandatory; /* Enables snapping */
+    overflow-x: auto;
+    padding: 10px 0;
+    gap: 10px; /* Gap between cards */
+  }
 
-.subscription_discounts {
-  height: 35vh;
-  width: 96%;
-  background-color: #f7f7f7;
-  padding: 10px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-  margin-top: 5%;
-}
-.plan_number {
-  height: 32px;
-  width: 32px;
-  border-radius: 99px;
-  background-color: #1d9112;
-  color: #ffffff;
-  padding: 5px;
-  padding-left: 12px;
-}
-.number_of_plans {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.subscription_plans_and_discounts {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  align-items: center;
-}
-.plan_subscribe_btn {
-  height: 48px;
-  width: 320px;
-  border-radius: 6px;
-  margin-top: 3%;
-  cursor: pointer;
-  font-weight: 700;
+  .basic_plan {
+    min-width: 90%; /* Ensure the card takes 90% width of the screen */
+    margin-right: 10px; /* Space between cards */
+    flex-shrink: 0; /* Prevent the cards from shrinking */
+  }
 }
 
 .plan_subscribe_btn:hover {
@@ -135,14 +43,14 @@
   color: #ffffff;
 }
 
-.plan_tittle p{
-  font-weight: 700;
-}
-.subscription_discounts p{
+.plan_tittle p {
   font-weight: 700;
 }
 
-/* popup styles */
+.subscription_discounts p {
+  font-weight: 700;
+}
+
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -153,18 +61,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensure it appears on top */
+  z-index: 1000;
 }
-
-/* .subscription_plan_popup {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  width: 40%;
-  max-width: 500px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: relative;
-} */
 
 .subscription_plan_popup_content {
   position: relative;

@@ -1,10 +1,36 @@
 .painting_service_detail_popup{
-    height: 1000px;
-    width: 600px;
-    background-color: yellowgreen;
+    height: 870px;
+    width: 500px;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 25px;
+    margin-left: 20px;
 }
 
-.popup-overlay {
+.painting_service_popup_contents{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.painting_service_popup_heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.painting_service_popup_address{
+  display: flex;
+  justify-content: space-between;
+}
+.painting_Service_features li{
+  list-style-type: square;
+}
+
+.painting_service_discount_coupon img{
+  width: 95%;
+}
+/* .popup-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -37,4 +63,4 @@
   
   .popup-content button:hover {
     background-color: #0056b3;
-  }
+  } */

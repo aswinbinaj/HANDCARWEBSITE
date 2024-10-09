@@ -28,8 +28,8 @@
   cursor: pointer;
 }
 .subscription_contents img {
-  width: 996px;
-  height: 439px;
+  max-width: 100%;
+  height: auto;
 }
 
 @media (max-width: 768px) {
@@ -45,6 +45,7 @@
   }
   .subscription_contents p {
     font-size: 0.9rem;
+    margin-left: 6%;
   }
   .subscription_contents button {
     width: 100%;
@@ -55,9 +56,11 @@
 @media (max-width: 480px) {
   .subscription_contents h1 {
     font-size: 1.5rem;
+    margin-left: 5%;
   }
   .subscription_contents p {
     font-size: 0.8rem;
+    margin-left: 6%;
   }
   .subscription_contents button {
     height: 48px;

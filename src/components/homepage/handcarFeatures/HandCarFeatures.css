@@ -80,6 +80,10 @@
   width: 200px;
   border-radius: 5px;
   margin-top: 3%;
+  background-color: #191919;
+  color: #FFFFFF;
+  font-weight: 500;
+  border: none;
 }
 
 @media (max-width: 620px) {

@@ -10,9 +10,9 @@ const LoginPage = () => {
 
   return (
     <div className="login-container">
-      {/* <div className="loginpage_logo">
+      <div className="loginpage_logo">
         <img src={handcar_logo} alt="" srcSet="" />
-      </div> */}
+      </div>
       <div className="tab-container">
         <button
           className={`tab ${isLogin ? "active" : ""}`}

@@ -13,7 +13,7 @@ const SubscriptionHeader = () => {
           round.
         </p>
         <button>View all plans</button>
-        <img src={subscription_page_headerimg} alt="" srcset="" />
+        <img src={subscription_page_headerimg} alt="" srcset="" className="subscription_page_headerimg" />
       </div>
     </div>
   );

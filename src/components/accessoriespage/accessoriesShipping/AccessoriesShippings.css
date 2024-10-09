@@ -1,0 +1,76 @@
+.accessories_shipping_address {
+  margin-top: 20px;
+}
+
+.address_item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.selected_address {
+  border: 1px solid black;
+  background-color: #f8f8f8;
+  width: 400px;
+  margin-top: 2%;
+}
+
+.address_item input {
+  margin-right: 10px;
+}
+
+.accessories_shipping {
+  padding: 30px;
+}
+
+.add_address {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add_address input[type="text"] {
+  width: 794px;
+  height: 44px;
+}
+
+.zip_and_pincode {
+  display: flex;
+  gap: 15px;
+}
+
+.zip_and_pincode input {
+  height: 44px;
+  width: 389px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  outline: none;
+}
+
+.add_address_btn button {
+  height: 44px;
+  width: 794px;
+  background-color: #191919;
+  color: #FFFFFF;
+  border-radius: 8px;
+  border: none;
+}
+.accessories_shipping_container{
+  margin-left: 8%;
+}
+.accessories_shipping_container input{
+  margin-top: 7px;
+}
+
+/* cart */
+.shipping_cart{
+  height: 385px;
+  width: 380px;
+  background-color: rgb(219, 199, 199);
+}
+.accessories_shipping_and_cart{
+  display: flex;
+  justify-content: space-between;
+  /* gap: 35px; */
+}

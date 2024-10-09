@@ -12,7 +12,7 @@ const ServicePage = () => {
       {/* <HandcarServicesDetails/> */}
       <VariousHandcarServices/>
       <PaintingService/>
-      {/* <PaintingServiceDetailPopup/> */}
+      <PaintingServiceDetailPopup/>
     </div>
   )
 }

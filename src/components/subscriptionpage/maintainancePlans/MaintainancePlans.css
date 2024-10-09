@@ -1,5 +1,5 @@
 .maintainance_plans_container{
-    height: 195vh;
+    height: 203vh;
     width: 100%;
     background-color: #FFFFFF;
 }
@@ -50,13 +50,13 @@
   }
   
   .subscription_plan {
-    margin-top: 12%;
+    margin-top: 4%;
     display: flex;
     justify-content: space-around;
   }
   
   .basic_plan {
-    height: 650px;
+    height: 655px;
     width: 380px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -149,7 +149,9 @@
     color: #000000;
   }
   .maintainancepage_header_img img{
-    height: 330px;
+    /* height: 330px; */
+    max-width: 100%;
+    height: auto;
     width: 1200px;
     /* position: relative;
     left: 8%; */
@@ -157,6 +159,6 @@
     margin-left: 12%;
     
   }
-  .maintainance_plan{
-    margin-top: 18%;
+  .maintainanace_plan{
+    margin-top: 12%;
   }

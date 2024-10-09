@@ -10,7 +10,9 @@ const ExclusiveOffers = () => {
           <div className="offer-content-container">
             <div className="offer-content">
               <span className="exclusive-tag">Exclusive</span>
-              <h1 className="offer-title">WEEKEND <br /> OFFER</h1>
+              <h1 className="offer-title">
+                WEEKEND <br /> OFFER
+              </h1>
               <p className="offer-subtitle">Flat 10% off on accessories</p>
               <div className="offer-code">
                 Use Code: <span className="code">WKNOFR10</span>
@@ -25,9 +27,13 @@ const ExclusiveOffers = () => {
           <div className="offer-content-container">
             <div className="offer-content">
               <span className="exclusive-tag">Exclusive</span>
-              <h1 className="offer-title">FREE CAR <br /> SERVICE</h1>
+              <h1 className="offer-title">
+                FREE CAR <br /> SERVICE
+              </h1>
               <div className="free_car_service">
-                <p>On every purchase above <br /> AED100</p>
+                <p>
+                  On every purchase above <br /> AED100
+                </p>
               </div>
             </div>
             <div className="offer-image">
@@ -39,9 +45,13 @@ const ExclusiveOffers = () => {
           <div className="offer-content-container">
             <div className="offer-content">
               <span className="exclusive-tag">Exclusive</span>
-              <h1 className="offer-title">FREE CAR <br /> SERVICE</h1>
+              <h1 className="offer-title">
+                FREE CAR <br /> SERVICE
+              </h1>
               <div className="free_car_service">
-                <p>On every purchase above <br /> AED100</p>
+                <p>
+                  On every purchase above <br /> AED100
+                </p>
               </div>
             </div>
             <div className="offer-image">

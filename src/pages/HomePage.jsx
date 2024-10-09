@@ -17,6 +17,7 @@ import FAQ from "../components/homepage/faq/FAQ";
 import ContactForm from "../components/homepage/contactForm/ContactForm";
 import Footer from "../components/footer/Footer";
 import Header from "../components/Header/Header";
+import WhatsApp from "../utils/WhatsApp";
 // import LoginPage from "../components/loginpage/LoginPage";
 // import OtpVerification from "../components/loginpage/OtpVerification";
 
@@ -32,16 +33,18 @@ const HomePage = () => {
       
       <GuaranteedFeatures />
       <AccessoriesByCategories />
-      <CarAccessoriesList />
+      {/* <CarAccessoriesList /> */}
       
       {/* <BrandAccessories /> */}
       <BrandSpareParts />
       <HandCarServices/>
       <SparePartsSlider/>
       <AboutHandcar/>
-      <Testimonials/>
+      {/* <WhatsApp/> */}
+      {/* <Testimonials/> */}
       <FAQ/>
-      <ContactForm/>
+      {/* <ContactForm/> */}
+      <Footer/>
       {/* <LoginPage/> */}
       {/* <OtpVerification/> */}
     </div>

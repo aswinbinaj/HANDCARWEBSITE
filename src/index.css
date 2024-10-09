@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif !important;
 }
 a {
   text-decoration: none;
@@ -11,5 +11,8 @@ a {
 body {
   min-height: 100vh;
   overflow-x: hidden;
+}
+button{
+  cursor: pointer;
 }
 

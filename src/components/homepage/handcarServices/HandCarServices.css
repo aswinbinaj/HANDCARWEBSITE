@@ -1,120 +1,145 @@
-.handcar_services_container {
+.handcar-services-container {
   margin-top: 2%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-.handcar_services {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; /* Adjust layout on smaller screens */
+.handcar-services {
+  padding: 0 20px;
+  margin-bottom: 40px;
 }
 
-.handcar_services_heading {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  height: 20vh;
-  width: 33%;
-  margin-top: 8%;
-  margin-left: 5%;
+.handcar-services-heading {
+  text-align: center;
 }
 
-.handcar_services_heading h1 {
+.handcar-services-heading h1 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: clamp(24px, 5vw, 40px);
+  margin-bottom: 16px;
 }
 
-.handcar_services_heading p {
+.handcar-services-heading p {
   font-weight: 500;
-  font-size: 24px;
+  font-size: clamp(16px, 3vw, 24px);
+  color: #666;
 }
 
-.handcar_services_heading_img {
-  margin-bottom: -2%;
-}
-
-.various_handcar_services {
-  height: 40vh;
-  width: 80%;
-  background: linear-gradient(to right, #F56F71, #D60205);
+.services-scroll-wrapper {
   position: relative;
-  left: 10%;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.various-handcar-services {
+  background: linear-gradient(to right, #f56f71, #d60205);
+  padding: 20px;
+  margin: 0 auto;
+  width: 90%;
   border-radius: 10px;
+  position: relative;
   display: flex;
-  gap: 2rem;
-  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap; /* Make items wrap on small screens */
 }
 
-.car_service {
-  height: 32vh;
-  width: 27%;
-  background-color: #FFFFFF;
+.services-scroll-container {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 100%;
+  margin-left: 12%;
+}
+
+.services-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.car-service {
+  flex: 0 0 220px; /* Reduced width */
+  background-color: #ffffff;
   border-radius: 10px;
-  margin-top: 3%;
-  padding: 25px;
-  text-align: center; /* Center content for better alignment */
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.car_service p {
-  font-weight: 700;
-  font-size: 24px;
-  margin-top: 5%;
+.car-service:hover {
+  transform: translateY(-5px);
 }
 
-.car_service img {
-  width: 50%; /* Set a more flexible width for images */
+.service-image {
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 12px;
+}
+
+.car-service img {
+  width: 70%;
+  height: auto;
   display: block;
   margin: 0 auto;
 }
 
-/* Responsive Design: Tablet Screens (768px and below) */
-@media (max-width: 768px) {
-  .handcar_services_heading {
-    width: 80%; /* Expand width to use available space */
-    margin-left: 0;
-  }
-
-  .various_handcar_services {
-    flex-direction: column;
-    height: auto; /* Let the height be dynamic */
-  }
-
-  .car_service {
-    width: 80%; /* Make services full-width */
-  }
-
-  .handcar_services_heading h1 {
-    font-size: 30px; /* Reduce font size */
-  }
-
-  .handcar_services_heading p {
-    font-size: 18px;
-  }
+.car-service h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
 }
 
-/* Responsive Design: Mobile Screens (480px and below) */
-@media (max-width: 480px) {
-  .handcar_services_heading h1 {
-    font-size: 24px;
-  }
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: all 0.3s ease;
+  color: #d60205;
+}
 
-  .handcar_services_heading p {
-    font-size: 16px;
-  }
+.scroll-button:hover {
+  background: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
 
-  .car_service {
-    width: 100%; /* Full-width on small screens */
-    padding: 10px; /* Adjust padding for smaller screens */
-  }
+.scroll-button.left {
+  left: 10px;
+}
 
-  .car_service img {
-    width: 60%; /* Make images smaller */
-  }
+.scroll-button.right {
+  right: 10px;
+}
 
-  .various_handcar_services {
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .various-handcar-services {
     width: 95%;
-    left: 0;
-    gap: 1rem; /* Reduce gap */
+    padding: 15px;
+  }
+
+  .car-service {
+    flex: 0 0 200px;
+  }
+
+  .scroll-button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
   }
 }

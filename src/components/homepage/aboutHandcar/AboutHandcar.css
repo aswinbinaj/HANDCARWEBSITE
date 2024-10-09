@@ -58,6 +58,7 @@
 .about_handcar_image img {
   max-width: 100%;
   height: auto;
+  margin-left: 5%;
 }
 
 @media (min-width: 768px) {

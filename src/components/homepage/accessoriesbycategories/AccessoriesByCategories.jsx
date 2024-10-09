@@ -25,7 +25,7 @@ const AccessoriesByCategories = () => {
 
             <div className="accessories_explore_btn">
               <p>Explore</p>
-              <FaLongArrowAltRight color="#DB1215" />
+              <FaLongArrowAltRight color="#DB1215" className="explore_icon" />
             </div>
           </div>
 
@@ -45,7 +45,7 @@ const AccessoriesByCategories = () => {
 
             <div className="accessories_explore_btn">
               <p>Explore</p>
-              <FaLongArrowAltRight color="#DB1215" />
+              <FaLongArrowAltRight color="#DB1215" className="explore_icon" />
             </div>
           </div>
 
@@ -67,7 +67,7 @@ const AccessoriesByCategories = () => {
 
             <div className="accessories_explore_btn">
               <p>Explore</p>
-              <FaLongArrowAltRight color="#DB1215" />
+              <FaLongArrowAltRight color="#DB1215" className="explore_icon" />
             </div>
           </div>
 
@@ -87,7 +87,7 @@ const AccessoriesByCategories = () => {
 
             <div className="accessories_explore_btn">
               <p>Explore</p>
-              <FaLongArrowAltRight color="#DB1215" />
+              <FaLongArrowAltRight color="#DB1215" className="explore_icon"/>
             </div>
           </div>
 

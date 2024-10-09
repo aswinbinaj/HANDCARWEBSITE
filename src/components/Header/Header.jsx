@@ -43,7 +43,8 @@ const Header = () => {
                 <Link to="/subscription">Subscribe</Link>
                 </li>
                 <li>
-                  <a href="#">Accessories</a>
+                  {/* <a href="#">Accessories</a> */}
+                  <Link to="/accessories">Accessories</Link>
                 </li>
                 <li>
                   <a href="#">About us</a>

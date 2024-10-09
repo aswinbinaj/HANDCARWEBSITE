@@ -16,6 +16,8 @@ const HandcarServicesDetails = () => {
         <div className="handcar_services_heading_img">
           <img src={handcarservices_header} alt="" />
         </div>
+
+        
       </div>
     </div>
   )
