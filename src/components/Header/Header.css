@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 5%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
   position: relative;
 }
@@ -108,13 +108,26 @@
   transition: all 0.3s ease-in-out;
 }
 
-.hamburger-line:nth-child(1) { top: 0; }
-.hamburger-line:nth-child(2) { top: 50%; transform: translateY(-50%); }
-.hamburger-line:nth-child(3) { bottom: 0; }
+.hamburger-line:nth-child(1) {
+  top: 0;
+}
+.hamburger-line:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hamburger-line:nth-child(3) {
+  bottom: 0;
+}
 
-.menu_toggle.open .hamburger-line:nth-child(1) { transform: translateY(9px) rotate(45deg); }
-.menu_toggle.open .hamburger-line:nth-child(2) { opacity: 0; }
-.menu_toggle.open .hamburger-line:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+.menu_toggle.open .hamburger-line:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.menu_toggle.open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+.menu_toggle.open .hamburger-line:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
 
 .mobile_menu {
   display: none;
@@ -123,7 +136,7 @@
   left: 0;
   right: 0;
   background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   z-index: 1000;
 }
@@ -148,11 +161,11 @@
   .nav_menu {
     gap: 1rem;
   }
-  
+
   .nav_menu li a {
     font-size: 14px;
   }
-  
+
   .nav_btn {
     padding: 6px 12px;
     font-size: 12px;
@@ -160,22 +173,23 @@
 }
 
 @media screen and (max-width: 768px) {
-  .nav_menu, .nav_buttons {
+  .nav_menu,
+  .nav_buttons {
     display: none;
   }
-  
+
   .nav_rightside {
     gap: 0.5rem;
   }
-  
+
   .menu_toggle {
     display: block;
   }
-  
+
   .mobile_menu {
     display: block;
   }
-  
+
   .mobile_menu .nav_btn {
     width: 100%;
     margin-top: 0.5rem;
@@ -186,16 +200,16 @@
   .navbar {
     padding: 10px 3%;
   }
-  
+
   .nav_leftside .logo {
     height: 30px;
   }
-  
+
   .icon {
     width: 20px;
     height: 20px;
   }
-  
+
   .nav_rightside {
     gap: 0.25rem;
   }
@@ -206,33 +220,33 @@
   .navbar {
     padding: 8px 2%;
   }
-  
+
   .nav_leftside .logo {
     height: 28px;
   }
-  
+
   .icon {
     width: 22px;
     height: 22px;
   }
-  
+
   .nav_rightside {
     gap: 0.5rem;
   }
-  
+
   .menu_toggle {
     width: 25px;
     height: 18px;
   }
-  
+
   .mobile_menu {
     padding: 0.75rem;
   }
-  
+
   .mobile_menu a {
     font-size: 14px;
   }
-  
+
   .mobile_menu .nav_btn {
     padding: 6px 12px;
     font-size: 12px;
@@ -243,22 +257,21 @@
   .navbar {
     padding: 6px 2%;
   }
-  
+
   .nav_leftside .logo {
     height: 25px;
   }
-  
+
   .icon {
     width: 18px;
     height: 18px;
   }
-  
+
   .menu_toggle {
     width: 22px;
     height: 16px;
   }
 }
-
 
 /* Add this to your Header.css file */
 
@@ -277,19 +290,19 @@
 
 .modal-content {
   background-color: white;
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 8px;
   position: relative;
-  max-width: 90%;
+  max-width: 98%;
   max-height: 90%;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .modal-close {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: rgb(0, 0, 0);
   border: none;
   font-size: 25px;

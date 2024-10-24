@@ -20,9 +20,9 @@ const SubscriptionPage = () => {
        <Header/>
       <SubscriptionHeader/>
       <SubscriptionPlans/>
-      <MaintainancePlans/>
+      {/* <MaintainancePlans/>
       <CarAccessoriesList />
-      <AccessoriesByCategories />
+      <AccessoriesByCategories /> */}
       {/* <LuxuryPlan/> */}
       <Footer/>
       

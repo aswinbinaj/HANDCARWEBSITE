@@ -8,11 +8,14 @@ const Pageredirection = () => {
       <Link to="/servicepage" >
         <p>Accessories</p>
       </Link>
-      <Link to="/autoparts" >
+      <Link to="/spareparts" >
       <p>Auto Parts</p>
       </Link>
-      
+      <Link to="/servicepage" >
       <p>Services</p>
+      </Link>
+      
+     
     </div>
   );
 };

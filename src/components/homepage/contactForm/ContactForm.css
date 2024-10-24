@@ -1,7 +1,7 @@
 .contact_form_container {
-  height: 60vh;
+  min-height: 60vh;
   width: 100%;
-  background-image: url(../../../assets/contactfrom_bg_car.jpg);
+  background-image: url('../../../assets/contactfrom_bg_car.jpg');
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -25,7 +25,8 @@
 }
 
 .contact_details h1 {
-  font-size: 3rem;
+  font-weight: 800;
+  font-size: 40px;
 }
 
 .contact_details_and_logo {
@@ -35,23 +36,13 @@
   margin-top: 20px;
 }
 
-.contact_logo {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
 .contact_detail_content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.contact_details h1{
-  font-weight: 800;
-  font-size: 40px;
-}
-.contact_detail_content p{
+.contact_detail_content p {
   font-weight: 500;
   font-size: 18px;
 }
@@ -68,13 +59,13 @@
 }
 
 .contact_form {
-  /* background-color: rgba(0, 0, 0, 0.5); */
   padding: 20px;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  min-width: 650px;
+  width: 100%;
+  max-width: 650px;
 }
 
 .name_and_ph_no {
@@ -108,4 +99,36 @@
 
 .contact_form_button button:hover {
   background-color: #cc0000;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .contact_form_container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px;
+  }
+
+  .contact_section {
+    display: none; /* Hide contact details on mobile */
+  }
+
+  .contact_form {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .name_and_ph_no {
+    flex-direction: column;
+  }
+
+  .contact_form_button button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact_form_container {
+    padding: 15px;
+  }
 }

@@ -43,7 +43,7 @@ const HomePage = () => {
       {/* <WhatsApp/> */}
       {/* <Testimonials/> */}
       <FAQ/>
-      {/* <ContactForm/> */}
+      <ContactForm/>
       <Footer/>
       {/* <LoginPage/> */}
       {/* <OtpVerification/> */}

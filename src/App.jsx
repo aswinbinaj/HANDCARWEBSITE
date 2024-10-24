@@ -11,6 +11,8 @@ import SparePartsPage from "./pages/SparePartsPage";
 import ServicePage from "./pages/ServicePage";
 import AccessoriesPage from "./pages/AccessoriesPage";
 import AccessoriesShippings from "./components/accessoriespage/accessoriesShipping/AccessoriesShippings";
+import ContactForm from "./components/homepage/contactForm/ContactForm";
+import ProfileDetails from "./components/Header/ProfileDetails";
 // import AccessoriesShipping from "./components/accessoriespage/accessoriesShipping/AccessoriesShipping";
 
 const App = () => {
@@ -22,11 +24,13 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/contactform" element={<ContactForm/>} />
           <Route path="/subscription" element={<SubscriptionPage />} />
           <Route path="/spareparts" element={<SparePartsPage />} />
           <Route path="/servicepage" element={<ServicePage />} />
           <Route path="/accessories" element={<AccessoriesPage />} />
           <Route path="/shipping" element={<AccessoriesShippings />} />
+          <Route path="/profile" element={<ProfileDetails/>} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>

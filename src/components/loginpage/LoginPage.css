@@ -59,6 +59,7 @@ input[type="email"] {
   border: 1px solid #ccc;
   border-radius: 8px;
   outline: none;
+  background-color: #E1E1E1;
 }
 
 .checkbox-group {
@@ -66,6 +67,11 @@ input[type="email"] {
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
+  
+}
+.checkbox-group p{
+  /* margin-left: -12%; */
+  margin-right: 13%;
 }
 
 .forgot-password {
@@ -131,4 +137,11 @@ input[type="email"] {
   font-size: 12px;
   color: #888;
   text-align: center;
+}
+.phone-input select{
+  border: 1px solid grey;
+  width: 95px;
+}
+.checkbox-group label{
+  margin-left: 5px;
 }
